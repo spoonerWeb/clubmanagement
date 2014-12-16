@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="de" datatype="plaintext" original="messages" date="2014-12-16T11:30:58Z" product-name="clubmanagement">
+		<header/>
+		<body>
+			<trans-unit id="tx_clubmanagement_domain_model_club">
+				<source>Club</source>
+			</trans-unit>
+			<trans-unit id="tx_clubmanagement_domain_model_club.name">
+				<source>Name</source>
+			</trans-unit>
+			<trans-unit id="tx_clubmanagement_domain_model_club.address">
+				<source>Address</source>
+			</trans-unit>
+			<trans-unit id="tx_clubmanagement_domain_model_club.zip">
+				<source>Zip</source>
+			</trans-unit>
+			<trans-unit id="tx_clubmanagement_domain_model_club.city">
+				<source>City</source>
+			</trans-unit>
+			<trans-unit id="tx_clubmanagement_domain_model_club.responsible_persons">
+				<source>Responsible Persons</source>
+			</trans-unit>
+			<trans-unit id="tx_clubmanagement_domain_model_club.teams">
+				<source>Teams</source>
+			</trans-unit>
+			<trans-unit id="tx_clubmanagement_domain_model_club.logo">
+				<source>Logo</source>
+			</trans-unit>
+			<trans-unit id="tx_clubmanagement_domain_model_team">
+				<source>Team</source>
+			</trans-unit>
+			<trans-unit id="tx_clubmanagement_domain_model_team.advisors">
+				<source>Advisors</source>
+			</trans-unit>
+			<trans-unit id="tx_clubmanagement_domain_model_team.players">
+				<source>Players</source>
+			</trans-unit>
+			<trans-unit id="tx_clubmanagement_domain_model_team.reports">
+				<source>Reports</source>
+			</trans-unit>
+			<trans-unit id="tx_clubmanagement_domain_model_person">
+				<source>Person</source>
+			</trans-unit>
+			<trans-unit id="tx_clubmanagement_domain_model_person.title">
+				<source>Title</source>
+			</trans-unit>
+			<trans-unit id="tx_clubmanagement_domain_model_person.name">
+				<source>Name</source>
+			</trans-unit>
+			<trans-unit id="tx_clubmanagement_domain_model_person.frontend_user">
+				<source>Frontend User</source>
+			</trans-unit>
+			<trans-unit id="tx_clubmanagement_domain_model_person.role">
+				<source>Role</source>
+			</trans-unit>
+			<trans-unit id="tx_clubmanagement_domain_model_person.image">
+				<source>Image</source>
+			</trans-unit>
+			<trans-unit id="tx_clubmanagement_domain_model_role">
+				<source>Role</source>
+			</trans-unit>
+			<trans-unit id="tx_clubmanagement_domain_model_role.name">
+				<source>Name</source>
+			</trans-unit>
+			<trans-unit id="tx_clubmanagement_domain_model_report">
+				<source>Report</source>
+			</trans-unit>
+			<trans-unit id="tx_clubmanagement_domain_model_report.header">
+				<source>Header</source>
+			</trans-unit>
+			<trans-unit id="tx_clubmanagement_domain_model_report.bodytext">
+				<source>Bodytext</source>
+			</trans-unit>
+			<trans-unit id="tx_clubmanagement_domain_model_report.datetime">
+				<source>Datetime</source>
+			</trans-unit>
+			<trans-unit id="tx_clubmanagement_domain_model_report.type">
+				<source>Type</source>
+			</trans-unit>
+			<trans-unit id="tx_clubmanagement_domain_model_report.games">
+				<source>Games</source>
+			</trans-unit>
+			<trans-unit id="tx_clubmanagement_domain_model_report.images">
+				<source>Images</source>
+			</trans-unit>
+			<trans-unit id="tx_clubmanagement_domain_model_reporttype">
+				<source>Report Type</source>
+			</trans-unit>
+			<trans-unit id="tx_clubmanagement_domain_model_reporttype.name">
+				<source>Name</source>
+			</trans-unit>
+			<trans-unit id="tx_clubmanagement_domain_model_statistics">
+				<source>Statistics</source>
+			</trans-unit>
+			<trans-unit id="tx_clubmanagement_domain_model_statistics.minute">
+				<source>Minute</source>
+			</trans-unit>
+			<trans-unit id="tx_clubmanagement_domain_model_statistics.type">
+				<source>Type</source>
+			</trans-unit>
+			<trans-unit id="tx_clubmanagement_domain_model_statistics.person">
+				<source>Person</source>
+			</trans-unit>
+			<trans-unit id="tx_clubmanagement_domain_model_statistictype">
+				<source>Statistic Type</source>
+			</trans-unit>
+			<trans-unit id="tx_clubmanagement_domain_model_statistictype.name">
+				<source>Name</source>
+			</trans-unit>
+			<trans-unit id="tx_clubmanagement_domain_model_game">
+				<source>Game</source>
+			</trans-unit>
+			<trans-unit id="tx_clubmanagement_domain_model_game.location">
+				<source>Location</source>
+			</trans-unit>
+			<trans-unit id="tx_clubmanagement_domain_model_game.datetime">
+				<source>Datetime</source>
+			</trans-unit>
+			<trans-unit id="tx_clubmanagement_domain_model_game.half_time_result">
+				<source>Half Time Result</source>
+			</trans-unit>
+			<trans-unit id="tx_clubmanagement_domain_model_game.final_result">
+				<source>Final Result</source>
+			</trans-unit>
+			<trans-unit id="tx_clubmanagement_domain_model_game.involved_teams">
+				<source>Involved Teams</source>
+			</trans-unit>
+			<trans-unit id="tx_clubmanagement_domain_model_game.statistics">
+				<source>Statistics</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>
