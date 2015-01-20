@@ -33,6 +33,11 @@ namespace SpoonerWeb\Clubmanagement\Domain\Model;
 class Team extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity {
 
 	/**
+	 * @var string
+	 */
+	protected $title = NULL;
+
+	/**
 	 * advisors
 	 *
 	 * @var \TYPO3\CMS\Extbase\Persistence\ObjectStorage<\SpoonerWeb\Clubmanagement\Domain\Model\Person>
@@ -81,6 +86,22 @@ class Team extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity {
 		$this->advisors = new \TYPO3\CMS\Extbase\Persistence\ObjectStorage();
 		$this->players = new \TYPO3\CMS\Extbase\Persistence\ObjectStorage();
 		$this->reports = new \TYPO3\CMS\Extbase\Persistence\ObjectStorage();
+	}
+
+	/**
+	 * Gets title
+	 * @return string
+	 */
+	public function getTitle() {
+		return $this->title;
+	}
+
+	/**
+	 * Sets title
+	 * @param string $title
+	 */
+	public function setTitle($title) {
+		$this->title = $title;
 	}
 
 	/**

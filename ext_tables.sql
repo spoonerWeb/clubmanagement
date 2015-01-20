@@ -53,6 +53,8 @@ CREATE TABLE tx_clubmanagement_domain_model_team (
 
 	club int(11) unsigned DEFAULT '0' NOT NULL,
 
+	title varchar(255) DEFAULT '' NOT NULL,
+
 	advisors int(11) unsigned DEFAULT '0' NOT NULL,
 	players int(11) unsigned DEFAULT '0' NOT NULL,
 	reports int(11) unsigned DEFAULT '0' NOT NULL,

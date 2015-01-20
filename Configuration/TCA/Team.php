@@ -96,6 +96,15 @@ $GLOBALS['TCA']['tx_clubmanagement_domain_model_team'] = array(
 				),
 			),
 		),
+		'title' => array(
+			'exclude' => 1,
+			'label' => 'LLL:EXT:clubmanagement/Resources/Private/Language/locallang_db.xlf:tx_clubmanagement_domain_model_team.title',
+			'config' => array(
+				'type' => 'input',
+				'size' => 30,
+				'eval' => 'trim'
+			),
+		),
 		'image' => array(
 			'exclude' => 1,
 			'label' => 'LLL:EXT:clubmanagement/Resources/Private/Language/locallang_db.xlf:tx_clubmanagement_domain_model_team.image',
