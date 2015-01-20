@@ -79,7 +79,7 @@ class Club extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity {
 	/**
 	 * logo
 	 *
-	 * @var
+	 * @var \TYPO3\CMS\Extbase\Domain\Model\FileReference
 	 */
 	protected $logo = NULL;
 
@@ -261,16 +261,21 @@ class Club extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity {
 	/**
 	 * Returns the logo
 	 *
-	 * @return  $logo
+	 * @return \TYPO3\CMS\Extbase\Domain\Model\FileReference $logo
 	 */
 	public function getLogo() {
-		return $this->logo;
+		if (!is_object($this->logo)){
+			return null;
+		} elseif ($this->logo instanceof \TYPO3\CMS\Extbase\Persistence\Generic\LazyLoadingProxy) {
+			$this->logo->_loadRealInstance();
+		}
+		return $this->logo->getOriginalResource();
 	}
 
 	/**
 	 * Sets the logo
 	 *
-	 * @param string $logo
+	 * @param \TYPO3\CMS\Extbase\Domain\Model\FileReference $logo
 	 * @return void
 	 */
 	public function setLogo($logo) {

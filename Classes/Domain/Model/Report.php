@@ -64,6 +64,7 @@ class Report extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity {
 	 * games
 	 *
 	 * @var \TYPO3\CMS\Extbase\Persistence\ObjectStorage<\SpoonerWeb\Clubmanagement\Domain\Model\Game>
+	 * @lazy
 	 * @cascade remove
 	 */
 	protected $games = NULL;
@@ -71,7 +72,8 @@ class Report extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity {
 	/**
 	 * images
 	 *
-	 * @var \TYPO3\CMS\Extbase\Persistence\ObjectStorage<>
+	 * @var \TYPO3\CMS\Extbase\Persistence\ObjectStorage<\TYPO3\CMS\Extbase\Domain\Model\FileReference>
+	 * @lazy
 	 * @cascade remove
 	 */
 	protected $images = NULL;
@@ -213,9 +215,9 @@ class Report extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity {
 	}
 
 	/**
-	 * Adds a
+	 * Adds an image
 	 *
-	 * @param  $image
+	 * @param \TYPO3\CMS\Extbase\Domain\Model\FileReference $image
 	 * @return void
 	 */
 	public function addImage($image) {
@@ -223,9 +225,9 @@ class Report extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity {
 	}
 
 	/**
-	 * Removes a
+	 * Removes an image
 	 *
-	 * @param $imageToRemove The  to be removed
+	 * @param $imageToRemove \TYPO3\CMS\Extbase\Domain\Model\FileReference The image to be removed
 	 * @return void
 	 */
 	public function removeImage($imageToRemove) {
@@ -235,7 +237,7 @@ class Report extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity {
 	/**
 	 * Returns the images
 	 *
-	 * @return \TYPO3\CMS\Extbase\Persistence\ObjectStorage<> $images
+	 * @return \TYPO3\CMS\Extbase\Persistence\ObjectStorage $images
 	 */
 	public function getImages() {
 		return $this->images;
@@ -244,7 +246,7 @@ class Report extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity {
 	/**
 	 * Sets the images
 	 *
-	 * @param \TYPO3\CMS\Extbase\Persistence\ObjectStorage<> $images
+	 * @param \TYPO3\CMS\Extbase\Persistence\ObjectStorage $images
 	 * @return void
 	 */
 	public function setImages(\TYPO3\CMS\Extbase\Persistence\ObjectStorage $images) {

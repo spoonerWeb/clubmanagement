@@ -63,7 +63,7 @@ class Person extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity {
 	/**
 	 * image
 	 *
-	 * @var
+	 * @var \TYPO3\CMS\Extbase\Domain\Model\FileReference
 	 */
 	protected $image = NULL;
 
@@ -186,16 +186,21 @@ class Person extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity {
 	/**
 	 * Returns the image
 	 *
-	 * @return  $image
+	 * @return \TYPO3\CMS\Extbase\Domain\Model\FileReference $image
 	 */
 	public function getImage() {
-		return $this->image;
+		if (!is_object($this->image)){
+			return null;
+		} elseif ($this->image instanceof \TYPO3\CMS\Extbase\Persistence\Generic\LazyLoadingProxy) {
+			$this->image->_loadRealInstance();
+		}
+		return $this->image->getOriginalResource();
 	}
 
 	/**
 	 * Sets the image
 	 *
-	 * @param string $image
+	 * @param \TYPO3\CMS\Extbase\Domain\Model\FileReference $image
 	 * @return void
 	 */
 	public function setImage($image) {

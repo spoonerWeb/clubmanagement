@@ -55,6 +55,13 @@ class Team extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity {
 	protected $reports = NULL;
 
 	/**
+	 * image
+	 *
+	 * @var \TYPO3\CMS\Extbase\Domain\Model\FileReference
+	 */
+	protected $image = NULL;
+
+	/**
 	 * __construct
 	 */
 	public function __construct() {
@@ -74,6 +81,30 @@ class Team extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity {
 		$this->advisors = new \TYPO3\CMS\Extbase\Persistence\ObjectStorage();
 		$this->players = new \TYPO3\CMS\Extbase\Persistence\ObjectStorage();
 		$this->reports = new \TYPO3\CMS\Extbase\Persistence\ObjectStorage();
+	}
+
+	/**
+	 * Returns the image
+	 *
+	 * @return \TYPO3\CMS\Extbase\Domain\Model\FileReference $image
+	 */
+	public function getImage() {
+		if (!is_object($this->image)){
+			return null;
+		} elseif ($this->image instanceof \TYPO3\CMS\Extbase\Persistence\Generic\LazyLoadingProxy) {
+			$this->image->_loadRealInstance();
+		}
+		return $this->image->getOriginalResource();
+	}
+
+	/**
+	 * Sets the image
+	 *
+	 * @param \TYPO3\CMS\Extbase\Domain\Model\FileReference $image
+	 * @return void
+	 */
+	public function setImage($image) {
+		$this->image = $image;
 	}
 
 	/**
