@@ -30,6 +30,9 @@
 			<trans-unit id="tx_clubmanagement_domain_model_team">
 				<source>Team</source>
 			</trans-unit>
+			<trans-unit id="tx_clubmanagement_domain_model_team.image">
+				<source>Team image</source>
+			</trans-unit>
 			<trans-unit id="tx_clubmanagement_domain_model_team.advisors">
 				<source>Advisors</source>
 			</trans-unit>

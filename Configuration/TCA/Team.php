@@ -15,7 +15,7 @@ $GLOBALS['TCA']['tx_clubmanagement_domain_model_team'] = array(
 		'1' => array('showitem' => ''),
 	),
 	'columns' => array(
-	
+
 		'sys_language_uid' => array(
 			'exclude' => 1,
 			'label' => 'LLL:EXT:lang/locallang_general.xlf:LGL.language',
@@ -56,7 +56,7 @@ $GLOBALS['TCA']['tx_clubmanagement_domain_model_team'] = array(
 				'max' => 255,
 			)
 		),
-	
+
 		'hidden' => array(
 			'exclude' => 1,
 			'label' => 'LLL:EXT:lang/locallang_general.xlf:LGL.hidden',
@@ -94,6 +94,18 @@ $GLOBALS['TCA']['tx_clubmanagement_domain_model_team'] = array(
 				'range' => array(
 					'lower' => mktime(0, 0, 0, date('m'), date('d'), date('Y'))
 				),
+			),
+		),
+		'image' => array(
+			'exclude' => 1,
+			'label' => 'LLL:EXT:clubmanagement/Resources/Private/Language/locallang_db.xlf:tx_clubmanagement_domain_model_team.image',
+			'config' => \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::getFileFieldTCAConfig(
+				'image',
+				array(
+					'maxitems' => 1,
+					'minitems' => 0
+				),
+				$GLOBALS['TYPO3_CONF_VARS']['GFX']['imagefile_ext']
 			),
 		),
 
@@ -187,7 +199,7 @@ $GLOBALS['TCA']['tx_clubmanagement_domain_model_team'] = array(
 			),
 
 		),
-		
+
 		'club' => array(
 			'config' => array(
 				'type' => 'passthrough',

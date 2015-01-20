@@ -56,6 +56,7 @@ CREATE TABLE tx_clubmanagement_domain_model_team (
 	advisors int(11) unsigned DEFAULT '0' NOT NULL,
 	players int(11) unsigned DEFAULT '0' NOT NULL,
 	reports int(11) unsigned DEFAULT '0' NOT NULL,
+	image int(11) unsigned DEFAULT '0',
 
 	tstamp int(11) unsigned DEFAULT '0' NOT NULL,
 	crdate int(11) unsigned DEFAULT '0' NOT NULL,
