@@ -260,7 +260,7 @@ $GLOBALS['TCA']['tx_clubmanagement_domain_model_game'] = array(
 			'starttime' => 'starttime',
 			'endtime' => 'endtime',
 		),
-		'searchFields' => 'location,datetime,half_time_result,final_result,involved_teams,statistics,',
+		'searchFields' => 'location,datetime,half_time_result,final_result,game_times,minutes_per_game_time,involved_teams,statistics,',
 		'dynamicConfigFile' => \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::extPath($_EXTKEY) . 'Configuration/TCA/Game.php',
 		'iconfile' => \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::extRelPath($_EXTKEY) . 'Resources/Public/Icons/tx_clubmanagement_domain_model_game.gif'
 	),

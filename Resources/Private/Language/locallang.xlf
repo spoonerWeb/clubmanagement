@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <xliff version="1.0">
-	<file source-language="de" datatype="plaintext" original="messages" date="2014-12-16T11:30:58Z" product-name="clubmanagement">
+	<file source-language="de" datatype="plaintext" original="messages" date="2015-01-20T19:38:16Z" product-name="clubmanagement">
 		<header/>
 		<body>
 			<trans-unit id="tx_clubmanagement_domain_model_club">
@@ -122,6 +122,12 @@
 			</trans-unit>
 			<trans-unit id="tx_clubmanagement_domain_model_game.final_result">
 				<source>Final Result</source>
+			</trans-unit>
+			<trans-unit id="tx_clubmanagement_domain_model_game.game_times">
+				<source>Game Times</source>
+			</trans-unit>
+			<trans-unit id="tx_clubmanagement_domain_model_game.minutes_per_game_time">
+				<source>Minutes Per Game Time</source>
 			</trans-unit>
 			<trans-unit id="tx_clubmanagement_domain_model_game.involved_teams">
 				<source>Involved Teams</source>

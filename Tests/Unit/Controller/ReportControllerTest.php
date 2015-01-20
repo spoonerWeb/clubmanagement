@@ -3,7 +3,7 @@ namespace SpoonerWeb\Clubmanagement\Tests\Unit\Controller;
 /***************************************************************
  *  Copyright notice
  *
- *  (c) 2014 Thomas Löffler <loeffler@spooner-web.de>, Spooner Web
+ *  (c) 2015 Thomas Löffler <loeffler@spooner-web.de>, Spooner Web
  *  			
  *  All rights reserved
  *

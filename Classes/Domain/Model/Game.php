@@ -6,7 +6,7 @@ namespace SpoonerWeb\Clubmanagement\Domain\Model;
  *
  *  Copyright notice
  *
- *  (c) 2014 Thomas Löffler <loeffler@spooner-web.de>, Spooner Web
+ *  (c) 2015 Thomas Löffler <loeffler@spooner-web.de>, Spooner Web
  *
  *  All rights reserved
  *
@@ -59,6 +59,20 @@ class Game extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity {
 	 * @var string
 	 */
 	protected $finalResult = '';
+
+	/**
+	 * gameTimes
+	 *
+	 * @var integer
+	 */
+	protected $gameTimes = 0;
+
+	/**
+	 * minutesPerGameTime
+	 *
+	 * @var integer
+	 */
+	protected $minutesPerGameTime = 0;
 
 	/**
 	 * involvedTeams
@@ -170,6 +184,44 @@ class Game extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity {
 	 */
 	public function setFinalResult($finalResult) {
 		$this->finalResult = $finalResult;
+	}
+
+	/**
+	 * Returns the gameTimes
+	 *
+	 * @return integer $gameTimes
+	 */
+	public function getGameTimes() {
+		return $this->gameTimes;
+	}
+
+	/**
+	 * Sets the gameTimes
+	 *
+	 * @param integer $gameTimes
+	 * @return void
+	 */
+	public function setGameTimes($gameTimes) {
+		$this->gameTimes = $gameTimes;
+	}
+
+	/**
+	 * Returns the minutesPerGameTime
+	 *
+	 * @return integer $minutesPerGameTime
+	 */
+	public function getMinutesPerGameTime() {
+		return $this->minutesPerGameTime;
+	}
+
+	/**
+	 * Sets the minutesPerGameTime
+	 *
+	 * @param integer $minutesPerGameTime
+	 * @return void
+	 */
+	public function setMinutesPerGameTime($minutesPerGameTime) {
+		$this->minutesPerGameTime = $minutesPerGameTime;
 	}
 
 	/**

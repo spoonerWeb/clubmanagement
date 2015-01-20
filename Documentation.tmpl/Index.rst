@@ -28,7 +28,7 @@ Club Management
 		comma,separated,list,of,keywords
 
 	:Copyright:
-		2014
+		2015
 
 	:Author:
 		Thomas Löffler

@@ -351,6 +351,8 @@ CREATE TABLE tx_clubmanagement_domain_model_game (
 	datetime datetime DEFAULT '0000-00-00 00:00:00',
 	half_time_result varchar(255) DEFAULT '' NOT NULL,
 	final_result varchar(255) DEFAULT '' NOT NULL,
+	game_times int(11) DEFAULT '0' NOT NULL,
+	minutes_per_game_time int(11) DEFAULT '0' NOT NULL,
 	involved_teams int(11) unsigned DEFAULT '0' NOT NULL,
 	statistics int(11) unsigned DEFAULT '0' NOT NULL,
 

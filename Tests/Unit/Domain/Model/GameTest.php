@@ -5,7 +5,7 @@ namespace SpoonerWeb\Clubmanagement\Tests\Unit\Domain\Model;
 /***************************************************************
  *  Copyright notice
  *
- *  (c) 2014 Thomas Löffler <loeffler@spooner-web.de>, Spooner Web
+ *  (c) 2015 Thomas Löffler <loeffler@spooner-web.de>, Spooner Web
  *
  *  All rights reserved
  *
@@ -137,6 +137,52 @@ class GameTest extends \TYPO3\CMS\Core\Tests\UnitTestCase {
 		$this->assertAttributeEquals(
 			'Conceived at T3CON10',
 			'finalResult',
+			$this->subject
+		);
+	}
+
+	/**
+	 * @test
+	 */
+	public function getGameTimesReturnsInitialValueForInteger() {
+		$this->assertSame(
+			0,
+			$this->subject->getGameTimes()
+		);
+	}
+
+	/**
+	 * @test
+	 */
+	public function setGameTimesForIntegerSetsGameTimes() {
+		$this->subject->setGameTimes(12);
+
+		$this->assertAttributeEquals(
+			12,
+			'gameTimes',
+			$this->subject
+		);
+	}
+
+	/**
+	 * @test
+	 */
+	public function getMinutesPerGameTimeReturnsInitialValueForInteger() {
+		$this->assertSame(
+			0,
+			$this->subject->getMinutesPerGameTime()
+		);
+	}
+
+	/**
+	 * @test
+	 */
+	public function setMinutesPerGameTimeForIntegerSetsMinutesPerGameTime() {
+		$this->subject->setMinutesPerGameTime(12);
+
+		$this->assertAttributeEquals(
+			12,
+			'minutesPerGameTime',
 			$this->subject
 		);
 	}

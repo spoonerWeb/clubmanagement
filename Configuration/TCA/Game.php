@@ -6,10 +6,10 @@ if (!defined ('TYPO3_MODE')) {
 $GLOBALS['TCA']['tx_clubmanagement_domain_model_game'] = array(
 	'ctrl' => $GLOBALS['TCA']['tx_clubmanagement_domain_model_game']['ctrl'],
 	'interface' => array(
-		'showRecordFieldList' => 'sys_language_uid, l10n_parent, l10n_diffsource, hidden, location, datetime, half_time_result, final_result, involved_teams, statistics',
+		'showRecordFieldList' => 'sys_language_uid, l10n_parent, l10n_diffsource, hidden, location, datetime, half_time_result, final_result, game_times, minutes_per_game_time, involved_teams, statistics',
 	),
 	'types' => array(
-		'1' => array('showitem' => 'sys_language_uid;;;;1-1-1, l10n_parent, l10n_diffsource, hidden;;1, location, datetime, half_time_result, final_result, involved_teams, statistics, --div--;LLL:EXT:cms/locallang_ttc.xlf:tabs.access, starttime, endtime'),
+		'1' => array('showitem' => 'sys_language_uid;;;;1-1-1, l10n_parent, l10n_diffsource, hidden;;1, location, datetime, half_time_result, final_result, game_times, minutes_per_game_time, involved_teams, statistics, --div--;LLL:EXT:cms/locallang_ttc.xlf:tabs.access, starttime, endtime'),
 	),
 	'palettes' => array(
 		'1' => array('showitem' => ''),
@@ -135,6 +135,24 @@ $GLOBALS['TCA']['tx_clubmanagement_domain_model_game'] = array(
 				'size' => 30,
 				'eval' => 'trim'
 			),
+		),
+		'game_times' => array(
+			'exclude' => 1,
+			'label' => 'LLL:EXT:clubmanagement/Resources/Private/Language/locallang_db.xlf:tx_clubmanagement_domain_model_game.game_times',
+			'config' => array(
+				'type' => 'input',
+				'size' => 4,
+				'eval' => 'int'
+			)
+		),
+		'minutes_per_game_time' => array(
+			'exclude' => 1,
+			'label' => 'LLL:EXT:clubmanagement/Resources/Private/Language/locallang_db.xlf:tx_clubmanagement_domain_model_game.minutes_per_game_time',
+			'config' => array(
+				'type' => 'input',
+				'size' => 4,
+				'eval' => 'int'
+			)
 		),
 		'involved_teams' => array(
 			'exclude' => 1,

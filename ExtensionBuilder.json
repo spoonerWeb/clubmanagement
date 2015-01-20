@@ -666,6 +666,26 @@
                             "propertyName": "finalResult",
                             "propertyType": "String",
                             "uid": "56593402224"
+                        },
+                        {
+                            "allowedFileTypes": "",
+                            "maxItems": "1",
+                            "propertyDescription": "",
+                            "propertyIsExcludeField": true,
+                            "propertyIsRequired": false,
+                            "propertyName": "gameTimes",
+                            "propertyType": "Integer",
+                            "uid": "255096671733"
+                        },
+                        {
+                            "allowedFileTypes": "",
+                            "maxItems": "1",
+                            "propertyDescription": "",
+                            "propertyIsExcludeField": true,
+                            "propertyIsRequired": false,
+                            "propertyName": "minutesPerGameTime",
+                            "propertyType": "Integer",
+                            "uid": "89057536890"
                         }
                     ]
                 },
@@ -712,7 +732,7 @@
         },
         "extensionKey": "clubmanagement",
         "name": "Club Management",
-        "originalExtensionKey": "",
+        "originalExtensionKey": "clubmanagement",
         "persons": [
             {
                 "company": "Spooner Web",
@@ -871,8 +891,8 @@
         }
     ],
     "log": {
-        "last_modified": "2014-12-16 11:31",
+        "last_modified": "2015-01-20 07:38",
         "extension_builder_version": "6.2.0",
-        "be_user": " (1)"
+        "be_user": "Thomas L\u00f6ffler (2)"
     }
 }
